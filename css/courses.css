@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.courses{
+    margin-top: 1rem;
+}
+.enroll-bttn{
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px;
+    width: 100%;
+}
+.c-bttn{
+    background: var(--primaria);
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    border:1px transparent;
+    border-radius: 0 0 30% 30%;
+    font-weight: 500;
+    transition: var(--transition);
+    align-self: center;
+    color: var(--black);
+}
+.c-bttn:hover{
+    background: transparent;
+    color: var(--white);
+    border-color: var(--white);
+}
+.enroll-bttn span{
+    color: var(--white);
+}
+.courses-plus{
+    background: rgba(24, 21, 67, 0.73);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.courses-type-container{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    align-items: center; 
+    width: 93%;
+}
+.courses-type{
+    background-color: var(--bg1);
+    border-radius: 2rem;
+    height: fit-content;
+    width: 300px;
+    text-align: center;
+    transition: var(--transition);
+}
+.type-icon {
+    display: inline-block;
+    background: var(--primaria);
+    padding: 0.8rem;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+.courses-type:hover{
+    transform: scale(1.05);
+    background-color: transparent;
+    border: 2px solid var(--primaria);
+}
+.courses-type-container > :nth-child(2) .type-icon{
+    background: var(--sucess);
+}
+.courses-type-container > :nth-child(3) .type-icon{
+    background-color: var(--warning)
+}
+.courses-type-container > :nth-child(4) .type-icon{
+    background-color: var(--danger);
+}
+.courses-type-container > :nth-child(5) .type-icon{
+    background-color: var(--danger-variant);
+}
+.courses-type-container > :nth-child(6) .type-icon{
+    background: var(--warning-variant);
+}
+.courses-type-container > :nth-child(7) .type-icon{
+    background-color: var(--warning-variant);
+}
+.courses-type-container > :nth-child(8) .type-icon{
+    background-color: var(--danger-variant)
+}
+.courses-type-container > :nth-child(9) .type-icon{
+    background: var(--danger);
+}
+.courses-type-container > :nth-child(10) .type-icon{
+    background: var(--warning);
+}
+.courses-type-container > :nth-child(11) .type-icon{
+    background: var(--sucess);
+}
+@media screen and (max-width: 1024px){
+    .enroll-bttn{
+        width: 80%;
+        gap: 4rem;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .courses-plus{
+        margin-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .courses-type-container{
+        align-items: center;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+    .courses-type {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 2rem; 
+    }
+    .type-icon {
+        margin-bottom: 1.5rem; 
+        font-size: 1.2rem;
+        width: 60px;
+        height: 60px;
+        padding: 1rem;
+    }
+    .courses-type h5 { 
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .courses-type p { 
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px){
+    .courses-type h5 { 
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .courses-type p { 
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}

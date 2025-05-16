@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=League+Gothic&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Escola Web</title>
+</head>
+<body>
+     <nav>
+         <div class="container nav_container">
+                
+            <a href="index.html" class="title"><i class="fa-solid fa-school"></i>E-SCHOOL</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="courses.html">courses</a></li>
+                    <li><a href="contact.html">contacts</a></li>
+                    </ul>
+                <button id = "open-menu-bttn"><i class="fa-solid fa-bars"></i></button>
+                <button id = "close-menu-bttn"><i class="fa-solid fa-x"></i></button>
+        </div>
+    </nav>
+
+    <section class="contact">
+        <div class="container contact-container">
+            <aside class="contact-aside">
+                <div class="aside-img">
+                <img src="images/contact.png">
+                </div>
+                    <h2>Entre em Contato Conosco</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempore reprehenderit.</p>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <h5>+55 (83) 92253-5440</h5>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <h5>@eschoolinstitute@gmail.com</h5>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h5>Texas, USA</h5>
+                        </li>
+                    </ul>
+                    <ul class="contact-socials">
+                    <li><a href="#"><i class = "fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class = "fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class = "fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class = "fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class = "fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </aside>
+            <form class="contact-form" action="https://formspree.io/f/manovbnp" method="POST">
+                <div class="form-name">
+                    <input type="text" name="Nome" placeholder="Insira Seu Nome" required>
+                    <input type="text" name="Sobrenome" placeholder="Insira Seu Sobrenome" required>
+                </div>
+                <input type="email" name="Endereço de Email" placeholder="Insira seu E-mail" required>
+                <textarea name="mensagem" | rows="7" placeholder="Digite sua Mensagem" required></textarea>
+                <button type="submit" class="bttn bttn-primary">Enviar</button>
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-1">
+                    <a href="index.html" class="footer-logo">E-SCHOOL</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quo velit exercitationem expedita</p>
+                </div>
+                <div class="footer-2">
+                    <h4>MENU</h4>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="courses.html">courses</a></li>
+                        <li><a href="contact.html">contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-3">
+                    <h4>Privacidade</h4>
+                    <ul class="privacy">
+                        <li><a href="#">Políticias de Privacidade</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                        <li><a href="#">Política de Devolução</a></li>
+                    </ul>
+                </div>
+                <div class="footer-4">
+                    <h4>Entre Em Contato</h4>
+                    <p>(83) 99999-9999</p>
+                    <p>eschoolinstitute@gmail.com</p>
+                </div>
+                <div class="footer-5">
+                    <h4>Nossas Redes Sociais</h4>
+                <ul class="footer-socials">
+                    <li><a href="#"><i class = "fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class = "fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class = "fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class = "fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class = "fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <small>Copyright &copy; E-SCHOOL</small>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html> 
